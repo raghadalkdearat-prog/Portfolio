@@ -1,0 +1,628 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+html {
+ 
+  scroll-padding-top: 100px; 
+}
+
+a.logo-text {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  
+}
+
+
+.my-custom-nav {
+  background-color: #1a1d20; 
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+.custom-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+.nav-item{
+    background-color: rgb(60, 62, 62);
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.custom-link:hover {
+  color: #13ffe7 !important; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== About Section ==================== */
+
+.content1 {
+  background-color: rgb(225, 248, 246);
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  max-width: 100%;
+  padding: 60px 5%; 
+  margin: 0;
+  margin-top: 60px;
+}
+
+.image1 {
+  flex: 1;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.developer {
+  width: 100%;
+  max-width: 380px; 
+  height: auto;
+  border-radius: 20px;
+}
+
+.button-text {
+  flex: 1.2;
+  text-align: center;
+}
+
+.about-me {
+  font-family: 'Convergence', sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #1a1d20;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-unique {
+  font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block; 
+  background-color: rgb(79, 80, 187);
+  color: #ffffff ;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(30, 0, 255);
+  transform: translateY(-2px); 
+}
+
+
+
+@media (max-width: 768px) {
+  .content1 {
+    flex-direction: column-reverse; 
+    text-align: center;
+    gap: 30px;
+    padding: 30px 15px;
+  }
+
+  .developer {
+    max-width: 280px; 
+  }
+
+  .about-me {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+/* ==================== experince Section ==================== */
+.content2{
+ 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  padding: 60px 5%; 
+  margin: 0;
+}
+
+.Experience{
+  
+   font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight:bolder
+}
+
+.exp1{
+border: solid 2px black;
+border-radius: 10px; 
+width: 90%;
+max-width: 769px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+}
+.exp1:hover{
+  background-color:rgb(225, 248, 246);
+}
+
+.exp-name1{
+  padding-top: 20px;
+  padding-left: 10px;
+color: #077281;
+font-family: 'Convergence', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+
+}
+.details{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #1a1d20;
+  text-align: center;
+
+  
+}
+
+
+
+
+
+
+/* ==================== qualifications Section ==================== */
+.content3{
+ background-color: rgb(225, 248, 246);
+display:flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  padding: 60px 5%; 
+  margin: 0;
+}
+
+.Qualification-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+   gap: 20px;
+   width: 100%;
+   
+
+}
+
+.Qualification{
+  
+   font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight:bolder
+}
+
+.qua1{
+border: solid 2px black;
+border-radius: 10px; 
+width: 30%;
+max-width: 769px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
+
+}
+
+@media (max-width: 768px) {
+  .qua1 {
+    width: 100%;           
+  }
+}
+
+
+.qua-name1{
+  padding-top: 20px;
+  padding-left: 10px;
+color: #077281;
+font-family: 'Convergence', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+
+}
+.qua-details{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #1a1d20;
+  text-align: center;
+
+  
+}
+
+
+
+
+
+
+
+/* ==================== skills Section ==================== */
+
+.skills{
+    font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight:bolder
+}
+.content4{
+ background-color:#ffffff;
+display:flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  padding: 60px 5%; 
+  margin: 0;
+}
+
+.skills-container{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  justify-items: center;
+   gap: 30px;
+   width: 100%;
+   max-width: 768px;
+   
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+
+
+
+.icon{
+font-size: 2.5rem;
+}
+
+.skills1{
+border: solid 2px black;
+border-radius: 10px; 
+width: 100%;
+max-width: 769px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
+
+}
+
+
+.skills1:hover {
+             
+  transform: translateY(+4px); 
+  
+}
+
+
+@media (max-width: 768px) {
+  .skills1 {
+    width: 100%;           
+  }
+}
+
+
+.skill-name1{
+  padding-top: 20px;
+  padding-left: 10px;
+color: #077281;
+font-family: 'Convergence', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+/* ==================== projects Section ==================== */
+
+
+.content5{
+ background-color: rgb(225, 248, 246);
+display:flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  padding: 60px 5%; 
+  margin: 0;
+  
+}
+.Projects{
+    font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight:bolder
+}
+
+.proj-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+   gap: 20px;
+   width: 100%;
+
+}
+
+.proj1{
+
+  border: solid 2px black;
+border-radius: 10px; 
+width: 30%;
+max-width: 769px;
+padding: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+ 
+
+}
+
+
+
+
+
+
+.image{
+
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.proj-name{
+
+   padding-top: 20px;
+  padding-left: 10px;
+color: #077281;
+font-family: 'Convergence', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+
+.proj-text{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #1a1d20;
+  text-align: center;
+}
+
+.proj-link{
+  background-color:rgb(79, 80, 187);;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color:#ffffff;
+}
+
+
+.proj-link:hover{
+background-color: rgb(30, 0, 255);
+
+}
+
+@media (max-width: 768px) {
+  .proj1 {
+    width: 100%;           
+    min-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* ==================== references Section ==================== */
+
+
+.content6{
+ 
+display:flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  padding: 60px 5%; 
+  margin: 0;
+  
+}
+.References{
+    font-family: 'Convergence', sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  font-weight:bolder
+}
+
+.refe-container{
+   display:grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  justify-items: center;
+   gap: 30px;
+   width: 100%;
+   max-width: 768px;
+   
+}
+
+.refe1{
+
+ border: solid 2px black;
+border-radius: 10px; 
+width: 100%;
+max-width: 769px;
+padding: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+background-color: #ffffff;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+ 
+
+}
+.avatar-icon {
+  width: 100%;
+  max-width: 768px;
+  height: 80px;
+  margin-right: 40px;
+  
+}
+
+
+
+
+
+.refe-name{
+
+   padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+color: #077281;
+font-family: 'Convergence', sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+
+
+.refe-link{
+  background-color: rgb(79, 80, 187);;
+  text-decoration: none;
+  border-radius: 7px;
+  
+  margin-bottom: 10px;
+  color:#ffffff;
+ margin-left: 50px;
+ padding: 12px 28px;
+  
+}
+
+.refe-link:hover{
+background-color: rgb(30, 0, 255);
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .refe1 {
+    width: 100%;           
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .refe-container {
+    grid-template-columns: 1fr
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-footer {
+  background-color: rgb(225, 248, 246); /* غيري هذا الكود لتغيير لون خلفية الفوتر (مثلاً داكن فخم) */
+
+}
+
+.custom-footer .footer-link,
+.custom-footer .footer-copy {
+  color:  #000000 !important; 
+  transition: color 0.3s ease;
+  background-color: rgb(225, 248, 246) !important;
+}
+
+.custom-footer .social-icon {
+  color: #000000 !important; 
+  font-size: 1.3rem; /* حجم الأيقونات */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* 4. تأثيـر تحريك الماوس (Hover) */
+.custom-footer .footer-link:hover {
+  color: #008395 !important; 
+}
+
+
