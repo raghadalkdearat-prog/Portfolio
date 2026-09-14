@@ -1,12 +1,10 @@
 
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Convergence&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html {
  
-  scroll-padding-top: 100px; 
+  scroll-padding-top: 60px; 
 }
 
 a.logo-text {
@@ -33,13 +31,13 @@ a.logo-text {
   transition: color 0.3s ease;
 }
 .nav-item{
-    background-color: rgb(60, 62, 62);
-    margin-left: 20px;
-    border-radius: 5px;
+    
+    margin-left: 5px;
+    
 }
 
 .custom-link:hover {
-  color: #13ffe7 !important; 
+  color: #ee7f00 !important; 
 }
 
 
@@ -48,14 +46,9 @@ a.logo-text {
 
 
 
-
-
-
-
-
-/* ==================== About Section ==================== */
-
+/* ==================== hero Section ==================== */
 .content1 {
+
   background-color: rgb(225, 248, 246);
   display: flex;
   flex-direction:row-reverse;
@@ -65,52 +58,41 @@ a.logo-text {
   width: 100%;
   max-width: 100%;
   padding: 60px 5%; 
-  margin: 0;
-  margin-top: 60px;
+  margin-top: 90px;
+  height:100vh;
 }
 
-.image1 {
-  flex: 1;
-  display: flex;
-  justify-content:flex-start;
-}
 
-.developer {
-  width: 100%;
-  max-width: 380px; 
-  height: auto;
-  border-radius: 20px;
-}
 
-.button-text {
-  flex: 1.2;
+.button-text-hero {
   text-align: center;
 }
 
-.about-me {
+.about-me-hero {
   font-family: 'Convergence', sans-serif;
-  font-weight: 800;
-  color: rgb(0, 0, 0);
+  font-weight:bold;
+  color: rgb(211, 120, 0);
   font-size: 3rem;
 }
 
-.text {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #1a1d20;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.text-hero {
+ margin: 10px;
+  color: #201d1a;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  
 }
 
-.text-unique {
+.text-unique-hero {
   font-family: 'Convergence', sans-serif;
   color: #000000;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  text-shadow: 0 0 3px rgb(76, 247, 253);
 }
 
-.button {
-  display: inline-block; 
+.button-hero {
+
   background-color: rgb(79, 80, 187);
   color: #ffffff ;
   padding: 12px 28px;
@@ -120,9 +102,9 @@ a.logo-text {
   transition: all 0.3s ease;
 }
 
-.button:hover {
+.button-hero:hover {
   background-color: rgb(30, 0, 255);
-  transform: translateY(-2px); 
+ 
 }
 
 
@@ -132,14 +114,17 @@ a.logo-text {
     flex-direction: column-reverse; 
     text-align: center;
     gap: 30px;
-    padding: 30px 15px;
+    padding: 50px 15px;
+   
   }
 
-  .developer {
+  .developer-hero {
     max-width: 280px; 
+    height: 270px;
+    margin-bottom: 100px;
   }
 
-  .about-me {
+  .about-me-hero {
     font-size: 2rem;
   }
 }
@@ -150,58 +135,203 @@ a.logo-text {
 
 
 
-/* ==================== experince Section ==================== */
-.content2{
- 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-  gap: 20px;
-  padding: 60px 5%; 
-  margin: 0;
+
+
+
+/* About Section Styles */
+.about-section {
+  padding: 60px ;
+  background-color:#ffffff; 
+  text-align: center;
+  
 }
 
-.Experience{
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+font-family: 'Convergence', sans-serif;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+
+.about-lead {
+    margin-top: 20px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 1rem;
+  font-family: 'Convergence', sans-serif;
+  font-weight: bold;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.about-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 3px solid #ff7300;
   
-   font-family: 'Convergence', sans-serif;
+  
+}
+
+.detail-item {
+  
+  font-size: 1rem;
+  color:#000000;
+}
+
+.detail-label {
+  font-weight: bold;
+  color: #000000;
+  font-family: 'Convergence', sans-serif;
+}
+.detail-label:hover{
+  color: #ff7300;
+}
+
+
+@media (max-width: 768px) {
+
+  
+  .about-details {
+    flex-direction: column; 
+    gap: 12px;
+    text-align: center;
+  }
+  .about-title{
+    font-size: 2rem;
+  }
+
+  
+}
+
+
+
+
+/* ==================== experince Section ==================== */
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 60px 3%; 
+  background-color: rgb(225, 248, 246);
+  position: relative; 
+}
+
+/* NOTE: رسم الخط العمودي على يسار البوكسات */
+.content2::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 384px - 40px); 
+  top: 180px; 
+  bottom: 80px; 
+  width: 2px;
+  background-color: #201a1a; 
+  z-index: 1;
+}
+
+.Experience {
+  font-family: 'Convergence', sans-serif;
   color: #000000;
   font-size: 3rem;
-  font-weight:bolder
+  font-weight: bolder;
 }
 
-.exp1{
-border: solid 2px black;
-border-radius: 10px; 
-width: 90%;
-max-width: 769px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-
+.exp1 {
+  border: solid 2px black;
+  border-radius: 10px; 
+  width: 90%;
+  max-width: 769px;
+  height: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  position: relative; 
 }
-.exp1:hover{
-  background-color:rgb(225, 248, 246);
+
+
+.exp1-dot {
+  position: absolute;
+  left: -49px; 
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffb703; 
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ffb703;
+  z-index: 2; 
 }
 
-.exp-name1{
+
+.exp1-year {
+  position: absolute;
+  left: -105px; 
+  top: 18px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #201a1a;
+  font-family: 'Fira Code', monospace;
+}
+
+.exp-name1 {
   padding-top: 20px;
   padding-left: 10px;
-color: #077281;
-font-family: 'Convergence', sans-serif;
-font-size: 1.5rem;
-font-weight: bold;
-
+  color: #077281;
+  font-family: 'Convergence', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.details{
+
+.details {
   margin-top: 20px;
   margin-bottom: 30px;
-  color: #1a1d20;
+  color: #201a1a;
   text-align: center;
-
+  font-size: 1rem;
   
 }
+
+
+@media (max-width: 768px) {
+  
+  .content2 {
+    padding-left: 60px; 
+    align-items: flex-start; 
+  }
+
+  .content2::after {
+    left: 30px; 
+  }
+
+  .exp1-dot {
+    position: absolute;
+    left: -38px; 
+    top: 40px;   
+  }
+
+  .exp1-year {
+    display: none; 
+  }
+  .Experience{
+    font-size: 2rem;
+  }
+  .exp-name1{
+    font-size: 1.2rem;
+  }
+}
+   
+
 
 
 
@@ -210,16 +340,15 @@ font-weight: bold;
 
 /* ==================== qualifications Section ==================== */
 .content3{
- background-color: rgb(225, 248, 246);
+
 display:flex;
 flex-direction:column ;
 align-items: center;
 justify-content: center;
   width: 100%;
-  max-width: 100%;
   gap: 20px;
   padding: 60px 5%; 
-  margin: 0;
+ 
 }
 
 .Qualification-container{
@@ -250,12 +379,11 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 background-color: #ffffff;
 
 }
-
-@media (max-width: 768px) {
-  .qua1 {
-    width: 100%;           
-  }
+.qua1:hover{
+  background-color:rgb(255, 240, 217);
 }
+
+
 
 
 .qua-name1{
@@ -268,11 +396,19 @@ font-weight: bold;
 
 }
 .qua-details{
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #1a1d20;
-  text-align: center;
+ margin: 10px;
+  color: #000000;
+  
 
+  
+}
+@media (max-width: 768px) {
+  .qua1 {
+    width: 100%;           
+  }
+  .Qualification{
+    font-size: 2rem;
+  }
   
 }
 
@@ -283,41 +419,43 @@ font-weight: bold;
 
 
 /* ==================== skills Section ==================== */
-
 .skills{
+
     font-family: 'Convergence', sans-serif;
   color: #000000;
   font-size: 3rem;
   font-weight:bolder
+  
 }
 .content4{
- background-color:#ffffff;
+  
+
+ background-color: rgb(225, 248, 246);
 display:flex;
 flex-direction:column ;
 align-items: center;
 justify-content: center;
   width: 100%;
-  max-width: 100%;
   gap: 20px;
   padding: 60px 5%; 
-  margin: 0;
 }
 
 .skills-container{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  justify-content: center;
   justify-items: center;
    gap: 30px;
-   width: 100%;
-   max-width: 768px;
+   width: 70%;
+  
    
 }
 
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: 1fr; 
+   
   }
+
 }
 
 
@@ -326,15 +464,17 @@ justify-content: center;
 
 .icon{
 font-size: 2.5rem;
+margin-left: 60px;
 }
 
 .skills1{
 border: solid 2px black;
-border-radius: 10px; 
+border-radius: 60px; 
 width: 100%;
-max-width: 769px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+box-shadow: 0 5px 12px rgba(8, 8, 8, 0.25);
 background-color: #ffffff;
+padding: 5px 5px;
+
 
 }
 
@@ -347,15 +487,18 @@ background-color: #ffffff;
 
 
 @media (max-width: 768px) {
-  .skills1 {
-    width: 100%;           
+ 
+  
+  .skills{
+    font-size: 2rem;
   }
+  
 }
 
 
 .skill-name1{
-  padding-top: 20px;
-  padding-left: 10px;
+  padding: 10px;
+  margin: 10px;
 color: #077281;
 font-family: 'Convergence', sans-serif;
 font-size: 1.5rem;
@@ -370,19 +513,16 @@ font-weight: bold;
 
 
 /* ==================== projects Section ==================== */
-
-
 .content5{
- background-color: rgb(225, 248, 246);
+
 display:flex;
 flex-direction:column ;
 align-items: center;
 justify-content: center;
   width: 100%;
-  max-width: 100%;
   gap: 20px;
   padding: 60px 5%; 
-  margin: 0;
+ 
   
 }
 .Projects{
@@ -410,7 +550,7 @@ width: 30%;
 max-width: 769px;
 padding: 20px;
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-background-color: #ffffff;
+background-color:#ffffff;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -450,6 +590,7 @@ font-weight: bold;
   margin-bottom: 30px;
   color: #1a1d20;
   text-align: center;
+  
 }
 
 .proj-link{
@@ -469,8 +610,11 @@ background-color: rgb(30, 0, 255);
 
 @media (max-width: 768px) {
   .proj1 {
-    width: 100%;           
-    min-width: 100%;
+    
+    width: 80%;
+  }
+  .Projects{
+    font-size: 2rem;
   }
 }
 
@@ -482,19 +626,17 @@ background-color: rgb(30, 0, 255);
 
 
 /* ==================== references Section ==================== */
-
-
 .content6{
- 
+  
+  background-color: rgb(225, 248, 246);
 display:flex;
 flex-direction:column ;
 align-items: center;
 justify-content: center;
   width: 100%;
-  max-width: 100%;
   gap: 20px;
   padding: 60px 5%; 
-  margin: 0;
+ 
   
 }
 .References{
@@ -513,46 +655,41 @@ justify-content: center;
    width: 100%;
    max-width: 768px;
    
+   
 }
 
 .refe1{
 
  border: solid 2px black;
 border-radius: 10px; 
-width: 100%;
-max-width: 769px;
-padding: 20px;
+width: 90%;
+padding: 20px ;
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-background-color: #ffffff;
+background-color:#ffffff;
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
 gap: 20px;
  
 
 }
-.avatar-icon {
-  width: 100%;
-  max-width: 768px;
-  height: 80px;
-  margin-right: 40px;
+
+.avatar{
+  font-size:40px;
   
 }
 
 
 
-
-
 .refe-name{
 
-   padding-top: 20px;
-  padding-left: 10px;
-  padding-bottom: 20px;
+padding: 10px;
 color: #077281;
 font-family: 'Convergence', sans-serif;
 font-size: 1.5rem;
 font-weight: bold;
+
+
 }
 
 
@@ -561,11 +698,10 @@ font-weight: bold;
   background-color: rgb(79, 80, 187);;
   text-decoration: none;
   border-radius: 7px;
-  
-  margin-bottom: 10px;
+ margin-left: 70px;
   color:#ffffff;
- margin-left: 50px;
- padding: 12px 28px;
+ padding: 3px 20px;
+ 
   
 }
 
@@ -578,9 +714,13 @@ background-color: rgb(30, 0, 255);
 
 
 @media (max-width: 768px) {
+
+  .References{
+    font-size: 2rem;
+  }
   .refe1 {
-    width: 100%;           
-    min-width: 100%;
+   width: 80%;           
+   
   }
 }
 
@@ -597,13 +737,9 @@ background-color: rgb(30, 0, 255);
 
 
 
-
-
-
-
-
+/* ==================== footer Section ==================== */
 .custom-footer {
-  background-color: rgb(225, 248, 246); /* غيري هذا الكود لتغيير لون خلفية الفوتر (مثلاً داكن فخم) */
+  background-color:#ffffff;
 
 }
 
@@ -611,18 +747,18 @@ background-color: rgb(30, 0, 255);
 .custom-footer .footer-copy {
   color:  #000000 !important; 
   transition: color 0.3s ease;
-  background-color: rgb(225, 248, 246) !important;
+  
 }
 
 .custom-footer .social-icon {
   color: #000000 !important; 
-  font-size: 1.3rem; /* حجم الأيقونات */
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.3rem; 
+  
 }
 
-/* 4. تأثيـر تحريك الماوس (Hover) */
+
 .custom-footer .footer-link:hover {
-  color: #008395 !important; 
+  color: #ee7f00 !important; 
 }
 
 

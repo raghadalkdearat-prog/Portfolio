@@ -16,7 +16,8 @@ This is a personal, fully responsive portfolio website designed and developed to
 
 ## Sections:
 - **Navbar:** Fixed top navigation for quick access to all sections.
-- **About Me:** Introduction, profile picture, and CV download button.
+- **Home:** Introduction, profile picture, and CV download button.
+- **About Me:** Personal background, software development focus, core coding philosophy, and work availability status.
 - **Experience:** Overview of my frontend development and UI/UX background.
 - **Qualifications:** Academic degree and certifications.
 - **Skills:** Displaying my technical and soft skills.
@@ -28,3 +29,4 @@ This is a personal, fully responsive portfolio website designed and developed to
 ## Links & Contact
 - [GitHub Profile](https://github.com/raghadalkdearat-prog)
 - [LinkedIn Profile](https://www.linkedin.com/in/your-profile)
+- [Instagram Profile]( https://www.instagram.com/raghad_khudairat?stkn=M2FiaWF5eWVtMmZ0)
